@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    /* Styles for screens less than 768px wide */
+    body {
+      margin: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+  
+    #text-input, #results {
+      width: 100%; /* Make elements take full width on small screens */
+    }
+  
+    #text-input,
+    #clear-results,
+    #text-length {
+      margin-bottom: 10px; /* Add some spacing between elements */
+    }
+  }
+  
+  #text-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #results {
+    margin-top: 20px;
+  }
+  
+  #results h2 {
+    margin-bottom: 10px;
+  }
+  
+  #results ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #results li {
+    margin-bottom: 5px;
+  }
+  
+  #clear-results {
+    margin-left: 10px;
+    background-color: #f00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5; /* Initially disabled button */
+  }
+  
+  #clear-results:hover {
+    opacity: 1; /* Button becomes brighter on hover */
+  }
+  
